@@ -68,6 +68,10 @@ class ViewController: UIViewController {
         
         moveBugLeft()
         
+        //create tap gesture and add to view
+        let tap = UITapGestureRecognizer(target: self, action: Selector("handleTap:"))
+        view.addGestureRecognizer(tap)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -113,6 +117,16 @@ class ViewController: UIViewController {
             }, completion: {
                 finished in  self.moveBugLeft()
         })
+    }
+    
+    func handleTap(gesture:UITapGestureRecognizer){
+        let tapLocation = gesture.locationInView(bug.superview)
+        
+        if bug.layer.presentationLayer().frame.contains(tapLocation) {
+            println("Bug tapped")
+        }else {
+            println("Bug not tapped")
+        }
     }
 }
 
