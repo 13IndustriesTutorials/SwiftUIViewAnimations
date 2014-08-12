@@ -16,6 +16,22 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plate_cheese" id="640-j4-Fod">
+                                        <rect key="frame" x="0.0" y="-7" width="320" height="575"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bug" id="pXF-ai-OPt">
+                                        <rect key="frame" x="160" y="185" width="129" height="135"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fabric_top" id="oo0-C9-9B1">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="290"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fabric_bottom" id="Hkg-0H-mE4">
+                                        <rect key="frame" x="0.0" y="264" width="320" height="310"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="door_top" id="pqK-dL-02G">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="290"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,6 +49,9 @@
                     <connections>
                         <outlet property="baseketTop" destination="pqK-dL-02G" id="l9i-Rj-Tbo"/>
                         <outlet property="basketBottom" destination="STh-Dj-VRE" id="2KR-nv-N9W"/>
+                        <outlet property="bug" destination="pXF-ai-OPt" id="7Ct-Ig-XTQ"/>
+                        <outlet property="fabricBottom" destination="Hkg-0H-mE4" id="T9N-Je-NvZ"/>
+                        <outlet property="fabricTop" destination="oo0-C9-9B1" id="WdC-DG-UA4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -41,8 +60,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bug" width="129" height="135"/>
         <image name="door_bottom" width="320" height="310"/>
         <image name="door_top" width="320" height="310"/>
+        <image name="fabric_bottom" width="320" height="310"/>
+        <image name="fabric_top" width="320" height="310"/>
+        <image name="plate_cheese" width="320" height="568"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
