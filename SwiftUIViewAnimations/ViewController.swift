@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
@@ -19,6 +20,20 @@ class ViewController: UIViewController {
     
     //variables
     var isBugDead = false
+    let squishPlayer:AVAudioPlayer
+    
+    required init(coder aDecoder: NSCoder!) {
+        
+        let squishPath =  NSBundle.mainBundle().pathForResource("squish", ofType: "caf")        
+//        println("bundle \(NSBundle.mainBundle())")
+//        println("path \(squishPath)")
+        
+        let squishURL = NSURL(fileURLWithPath: squishPath)
+        squishPlayer = AVAudioPlayer(contentsOfURL: squishURL, error: nil)
+        squishPlayer.prepareToPlay()
+        
+        super.init(coder: aDecoder)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -124,6 +139,23 @@ class ViewController: UIViewController {
         
         if bug.layer.presentationLayer().frame.contains(tapLocation) {
             println("Bug tapped")
+            
+            if isBugDead { return }
+            
+            isBugDead = true
+            squishPlayer.play()
+            
+            UIView.animateWithDuration(0.7, delay: 0.0, options: .CurveEaseInOut, animations: {
+                self.bug.transform = CGAffineTransformMakeScale(1.25, 0.75)
+                
+                }, completion: {
+                    finished in UIView.animateWithDuration(2.0, delay: 2.0, options: nil, animations: {
+                        self.bug.alpha =  0.0  //fade out the bug
+                        }, completion: {
+                            finished in self.bug.removeFromSuperview() //remove the image from the view
+                    })
+            })
+            
         }else {
             println("Bug not tapped")
         }

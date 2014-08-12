@@ -12,6 +12,7 @@
 		CE79FE301999AFD900C3B319 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE79FE2E1999AFD900C3B319 /* Main.storyboard */; };
 		CE79FE321999AFD900C3B319 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE79FE311999AFD900C3B319 /* Images.xcassets */; };
 		CE79FE3E1999AFD900C3B319 /* SwiftUIViewAnimationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE79FE3D1999AFD900C3B319 /* SwiftUIViewAnimationsTests.swift */; };
+		CE79FE491999C65E00C3B319 /* squish.caf in Resources */ = {isa = PBXBuildFile; fileRef = CE79FE481999C65E00C3B319 /* squish.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +35,7 @@
 		CE79FE371999AFD900C3B319 /* SwiftUIViewAnimationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIViewAnimationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE79FE3C1999AFD900C3B319 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE79FE3D1999AFD900C3B319 /* SwiftUIViewAnimationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewAnimationsTests.swift; sourceTree = "<group>"; };
-		CE79FE471999B3C700C3B319 /* squish.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = squish.caf; sourceTree = "<group>"; };
+		CE79FE481999C65E00C3B319 /* squish.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = squish.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +59,7 @@
 		CE79FE1C1999AFD900C3B319 = {
 			isa = PBXGroup;
 			children = (
-				CE79FE471999B3C700C3B319 /* squish.caf */,
+				CE79FE481999C65E00C3B319 /* squish.caf */,
 				CE79FE271999AFD900C3B319 /* SwiftUIViewAnimations */,
 				CE79FE3A1999AFD900C3B319 /* SwiftUIViewAnimationsTests */,
 				CE79FE261999AFD900C3B319 /* Products */,
@@ -191,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE79FE491999C65E00C3B319 /* squish.caf in Resources */,
 				CE79FE301999AFD900C3B319 /* Main.storyboard in Resources */,
 				CE79FE321999AFD900C3B319 /* Images.xcassets in Resources */,
 			);
